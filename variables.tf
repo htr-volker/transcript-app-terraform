@@ -6,6 +6,12 @@ variable project_name {
 
 variable location {
   type        = string
-  default     = "East US"
+  default     = "UK South"
   description = "Region where the resources will be provisioned."
 }
+
+variable owner {
+  type        = string
+  description = "Owner of the resource (used in resource tagging)."
+}
+

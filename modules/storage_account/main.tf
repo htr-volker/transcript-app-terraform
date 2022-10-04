@@ -1,5 +1,14 @@
+resource random_string storage_account {
+  length  = 4
+  numeric  = true
+  upper   = false
+  lower   = false
+  special = false
+}
+
+
 resource "azurerm_storage_account" "main" {
-  name                     = "${replace(var.project_name,"-","")}storage"
+  name                     = "${replace(var.project_name,"-","")}storage${random_string.storage_account.result}"
   resource_group_name      = var.resource_group_name
   location                 = var.location
   account_tier             = "Standard"
