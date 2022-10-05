@@ -2,6 +2,12 @@
 
 ## Contents
 
+- [Transcript App – Terraform Configuration](#transcript-app--terraform-configuration)
+  - [Contents](#contents)
+  - [Overview](#overview)
+  - [Deployment](#deployment)
+  - [Improvements](#improvements)
+
 ## Overview
 
 ![Insfrastructure diagram](./diagram.png)
